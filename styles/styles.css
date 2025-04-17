@@ -1,113 +1,110 @@
 * {
-  margin: 10;
-  padding: 10;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: white;
-  color: #333;
-  line-height: 1.6;
-  padding: 2rem;
-}
-
-h1{
-  color: white;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-style: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  h2, h3, h4, p, ul, li, ol {
     color: #1a1a1a;
     margin-bottom: 1rem;
     text-align: center;
     list-style-position: inside;
   }
+  
+  .header span {
+    display: block; /* or inline-block if you want it beside the title */
+    font-size: 18px;
+    color: gray;
+    margin-top: 5px;
+  }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.emphasizedText{
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .emphasizedText {
     font-style: italic;
     font-weight: normal;
     color: black;
-}
-
-ul, li, ol{
-    text-align: center;
-    list-style-position: inside;
-}
-
-img{
+  }
+  
+  img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     max-width: 100%;
-    spac
-}
-
-.header{
+  }
+  
+  /* HEADER */
+  .header {
     background-color: #666;
     color: white;
     height: 100px;
     line-height: 100px;
-}
-
-.mainbody{
-    background-color: whitesmoke;
-}
-
-/* Ensure full height layout */
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-.page-container {
+    text-align: center;
+  }
+  
+  /* PAGE STRUCTURE */
+  .page-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* 100% of viewport height */
-}
-
-.common.mainbody {
-    flex: 1; /* This pushes footer to the bottom */
-}
-
-nav{
+    min-height: 100vh;
+  }
+  
+  .mainbody {
+    background-color: whitesmoke;
+    flex: 1;
+  }
+  
+  /* NAV BAR */
+  nav {
     background-color: lightgray;
     padding: 10px;
     overflow: hidden;
-}
-
-nav a{
+    text-align: center;
+  }
+  
+  nav a {
     color: #333;
     text-decoration: none;
     padding: 15px;
     font-weight: bold;
-}
-
-nav a:hover{
+  }
+  
+  nav a:hover {
     background-color: #ccc;
-}
-
-/* Footer */
-.footer{
+  }
+  
+  /* FOOTER */
+  .footer {
     position: fixed;
-    margin-top: 3rem;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
     font-size: 0.9rem;
     background-color: #666;
     color: white;
-    bottom: 0px;
-    left: 10px;
-    right: 10px;
-    height: 50px;
-    line-height: 50px;
-}
+  }
+  
